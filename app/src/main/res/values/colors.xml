@@ -3,4 +3,47 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_40">#66000000</color>
+    <color name="trans_f6f6f6">#66f6f6f6</color><!--透明背景色 -->
+
+    <!--UI 2.1.0 色值-->
+    <!--<color name="color_94674a">#f44338</color> &lt;!&ndash;主色（按钮、文字） &ndash;&gt;-->
+    <color name="color_94674a">#fe4844</color> <!--主色（按钮、文字） -->
+    <!--<color name="color_c78b63">#d13b30</color> &lt;!&ndash;按钮点击交互色 &ndash;&gt;-->
+    <color name="color_c78b63">#e03f3f</color> <!--按钮点击交互色 -->
+    <color name="color_fa7672">#fa7672</color> <!--逾期 文字提示色 -->
+    <color name="color_fef4f3">#fef4f3</color> <!--说明文字背景色 -->
+    <!--<color name="color_ffaa00">#ffaa00</color> &lt;!&ndash;辅色（按钮、文字） &ndash;&gt;-->
+    <color name="color_ffaa00">#ffa300</color> <!--辅色（按钮、文字） -->
+    <color name="color_ffe7c0">#ffe7c0</color> <!--闪贷说明文字背景色浅红色 -->
+    <color name="color_eeeeee">#eeeeee</color> <!--下划线颜色 -->
+    <color name="color_dbdbdb">#dbdbdb</color> <!--按钮不可点击色 -->
+    <color name="color_cccccc">#cccccc</color> <!--图片灰色 -->
+    <color name="color_f6f6f6">#f6f6f6</color> <!--背景灰色 -->
+    <color name="color_dddddd">#dddddd</color> <!--白色区域点击色 -->
+    <color name="color_333333">#333333</color> <!--标题、重要字体颜色 -->
+    <color name="color_ff2f3d">#ff2f3d</color> <!--标题、报错颜色 -->
+    <color name="color_666666">#666666</color> <!--非重要字体颜色 -->
+    <color name="color_bbbbbb">#bbbbbb</color> <!--指示性文字颜色 -->
+    <color name="color_999999">#999999</color> <!--说明、次要字体颜色 -->
+    <color name="color_0075cc">#0075cc</color> <!--可点击文字颜色 -->
+    <color name="color_fff1d6">#fff1d6</color> <!--逾期文字提示背景色 -->
+    <color name="color_fffbf2">#fffbf2</color> <!--浅红背景色 -->
+    <color name="color_f3f3f3">#f3f3f3</color>
+    <color name="color_3f3f3f">#3f3f3f</color>
+    <color name="color_e3e3e3">#e3e3e3</color>
+    <color name="color_00a8a4">#00a8a4</color>
+    <color name="color_feeceb">#feeceb</color>
+    <color name="color_ff6b00">#ff6b00</color> <!--橙色 低息贷 -->
+    <color name="color_4aa5a2">#4aa5a2</color> <!--橙色 低息贷 -->
+    <color name="color_ff4f5f">#ff4f5f</color> <!--橙色 低息贷 -->
+    <color name="color_f54338">#f54338</color>
+    <color name="color_f44338">#f44338</color>
+    <color name="color_00A8A4">#00A8A4</color>
+    <color name="color_f8f8f8">#f8f8f8</color>
+    <color name="color_09091a">#09091A</color>
+
+    <color name="__picker_pager_bg">#CA000000</color>
 </resources>

@@ -1,13 +1,215 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".MainActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <View
+            android:id="@+id/view_status_bar_blank"
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:background="@color/white"/>
+
+    <include layout="@layout/view_base_header"/>
+
     <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="90px">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:background="@color/white"
+            android:id="@+id/ll_loan_guide"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
 
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="96px"
+                android:drawableLeft="@mipmap/icon_guide"
+                android:drawablePadding="30px"
+                android:drawableRight="@mipmap/arrow_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="30px"
+                android:paddingRight="30px"
+                android:textColor="@color/color_333333"
+                android:background="@drawable/selector_tv_normal"
+                android:text="车闪贷指南" />
     </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:background="@color/white"
+            android:id="@+id/ll_department_address"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="96px"
+                android:drawableLeft="@mipmap/icon_department_address"
+                android:drawablePadding="30px"
+                android:drawableRight="@mipmap/arrow_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="30px"
+                android:paddingRight="30px"
+                android:textColor="@color/color_333333"
+                android:background="@drawable/selector_tv_normal"
+                android:text="门店地址" />
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:id="@+id/ll_about_us"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+        <View
+                android:layout_marginLeft="96px"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/color_eeeeee"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="96px"
+                android:drawableLeft="@mipmap/icon_about"
+                android:drawablePadding="30px"
+                android:drawableRight="@mipmap/arrow_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="30px"
+                android:paddingRight="30px"
+                android:textColor="@color/color_333333"
+                android:background="@drawable/selector_tv_normal"
+                android:text="关于我们" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:id="@+id/ll_suggest"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+        <View
+                android:layout_marginLeft="96px"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/color_eeeeee"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="96px"
+                android:drawableLeft="@mipmap/icon_suggestion"
+                android:drawablePadding="30px"
+                android:drawableRight="@mipmap/arrow_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="30px"
+                android:paddingRight="30px"
+                android:textColor="@color/color_333333"
+                android:background="@drawable/selector_tv_normal"
+                android:text="投诉建议" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:background="@color/white"
+            android:id="@+id/ll_version_update"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="96px"
+                    android:drawableLeft="@mipmap/icon_upgrade"
+                    android:drawablePadding="30px"
+                    android:drawableRight="@mipmap/arrow_right"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="30px"
+                    android:paddingRight="30px"
+                    android:textColor="@color/color_333333"
+                    android:background="@drawable/selector_tv_normal"
+                    android:text="更新版本" />
+            <TextView
+                    android:id="@+id/tv_current_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="96px"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/color_999999"
+                    android:text="当前版本 v1.0.0"
+                    android:layout_marginRight="70px"
+                    android:maxLines="1"
+                    android:gravity="center_vertical"/>
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_dot_red"
+                    android:background="@mipmap/icon_red_point"
+                    android:layout_marginLeft="70px"
+                    android:layout_marginTop="13px"/>
+        </RelativeLayout>
+        <View
+                android:layout_marginLeft="96px"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/color_eeeeee"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:id="@+id/ll_make_grade"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+        <TextView
+                android:id="@+id/tv_loan_apply"
+                android:layout_width="match_parent"
+                android:layout_height="96px"
+                android:drawableLeft="@mipmap/icon_comment"
+                android:drawablePadding="30px"
+                android:drawableRight="@mipmap/arrow_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="30px"
+                android:paddingRight="30px"
+                android:textColor="@color/color_333333"
+                android:background="@drawable/selector_tv_normal"
+                android:text="去评分" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:id="@+id/ll_share"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+        <View
+                android:layout_marginLeft="96px"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/color_eeeeee"/>
+        <TextView
+                android:id="@+id/tv_my_loan"
+                android:layout_width="match_parent"
+                android:layout_height="96px"
+                android:drawableLeft="@mipmap/icon_share"
+                android:drawablePadding="30px"
+                android:drawableRight="@mipmap/arrow_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="30px"
+                android:paddingRight="30px"
+                android:textColor="@color/color_333333"
+                android:background="@drawable/selector_tv_normal"
+                android:text="分享" />
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/tv_desc"
+            android:layout_marginTop="60px"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_999999"/>
 </LinearLayout>
